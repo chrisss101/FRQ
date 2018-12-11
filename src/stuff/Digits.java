@@ -24,12 +24,13 @@ public class Digits {
         }
         return true;
     }
-    public int[] getDigitList() {
-        int[] toPrint = new int[digitList.size()];
+    public String getDigitList() {
+        String List = "[";
         for (int i = 0; i < digitList.size(); i++) {
-            toPrint[i] = digitList.get(i);
+            List +=("," + digitList.get(i));
 
         }
-        return toPrint;
+        List += "]";
+        return List;
     }
 }
